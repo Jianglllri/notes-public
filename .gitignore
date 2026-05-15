@@ -1,1 +1,29 @@
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.txt
+Thumbs.db
+
+# Logs and temporary files
+logs/
+*.log
+tmp/
+
+# Environment variables
+.env
+.env.local
+scripts/*.env
+
+# IDE and Editor folders
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore private and project folders if root is ever initialized as a git repo
+# (Currently public and private are sub-repos)
+# private/
+# project/
