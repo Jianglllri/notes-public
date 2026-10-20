@@ -1,3 +1,4 @@
+<!-- zhiye:{"title":"笔试 ACM 输入输出","tags":["算法","面试"],"visibility":"public","folderPath":["公开笔记","算法面试","基础与输入输出"],"pinned":false} -->
 注意输入和输出
 ```python
 a,b=input().split()

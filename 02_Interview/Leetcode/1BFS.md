@@ -1,3 +1,4 @@
+<!-- zhiye:{"title":"广度优先搜索 BFS","tags":["算法","面试"],"visibility":"public","folderPath":["公开笔记","算法面试","搜索与回溯"],"pinned":false} -->
 常用模版
 ```python
 queue1=collections.deque()

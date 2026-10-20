@@ -1,0 +1,1600 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/01-Self-Attention机制.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 1 题：Transformer 中的 Self-Attention 机制与计算复杂度\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/01-Self-Attention机制.md\",\"sha\":\"670e78fd819a14ec753fbaafa10e3f01af0f7926\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/02-位置编码.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 2 题：位置编码——绝对与相对\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/02-位置编码.md\",\"sha\":\"5c1260a3dfa86cf010aa362993478dcad7d0088e\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/03-Layer-Normalization.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 3 题：Layer Normalization 的作用及为何不用 Batch Normalization\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/03-Layer-Normalization.md\",\"sha\":\"ea23577414549ff69d20ca01c06e58f40a2738cb\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/04-Attention-Mask.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 4 题：注意力掩码（Attention Mask）在训练与推理中的使用\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/04-Attention-Mask.md\",\"sha\":\"f14bb59fa83983eb7aee7ba98a7afe940fbd105a\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/05-KV-Cache.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 5 题：KV Cache 的原理与在自回归生成中的作用\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/05-KV-Cache.md\",\"sha\":\"e6736b496372e8394e8e2ed595f0750ec4009127\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/06-解码策略.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 6 题：Greedy / Beam Search / Temperature / Top-p 解码对比\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/06-解码策略.md\",\"sha\":\"c6b5eec58bba449b8c95467595d30b336bb7e0c9\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/07-Perplexity.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 7 题：困惑度（Perplexity）如何评估语言模型\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/07-Perplexity.md\",\"sha\":\"2979f66a83483d85a8bf78d88b54c18406cefa9b\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/08-涌现能力.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 8 题：大模型的涌现能力（Emergent Abilities）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/08-涌现能力.md\",\"sha\":\"3bbdb9c55c33fcc3259fe2d6f0b8966d2532632a\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/09-上下文学习.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 9 题：上下文学习（In-Context Learning）及其可能机制\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/09-上下文学习.md\",\"sha\":\"8e7b8cff77c5e0fcd73bd723bc7d02aa514bec15\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/10-Chain-of-Thought.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 10 题：Chain-of-Thought（CoT）提示的原理与有效性\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/10-Chain-of-Thought.md\",\"sha\":\"416a8124d79b9c5b5ea5d411084b40ef8f358d85\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/11-三种架构对比.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 11 题：Encoder-only / Decoder-only / Encoder-Decoder 适用场景\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/11-三种架构对比.md\",\"sha\":\"5c2ac01f956c3702fb528edbc26c7a58936288ed\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/12-并行.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 12 题：模型并行、数据并行、流水线并行\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/12-并行.md\",\"sha\":\"3eada497ca110e27715a8f199138cee91acfa9b2\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/13-混合精度训练.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 13 题：混合精度训练（Mixed Precision Training）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/13-混合精度训练.md\",\"sha\":\"a635f4fc78a9803d0bb9f24a223a0d61c9b8d39d\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/14-梯度累积.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 14 题：梯度累积如何解决显存不足\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/14-梯度累积.md\",\"sha\":\"d8414b86788b6e9ed0544d527960bc0f83eab3f9\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/15-LoRA.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 15 题：LoRA（Low-Rank Adaptation）的数学原理\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/15-LoRA.md\",\"sha\":\"ed4aad373af632a311bce5b64758b47db0d20bca\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/16-微调方法对比.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 16 题：Full Fine-tuning / LoRA / Adapter / Prompt Tuning 对比\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/16-微调方法对比.md\",\"sha\":\"997634a6b8d5fd746f1a3ab0db43ec3b2a20e204\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/17-模型量化.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 17 题：模型量化（Quantization）及 INT8 / INT4\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/17-模型量化.md\",\"sha\":\"38339a0b0a55327309c33470d4ec0fe8de93bcae\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/18-GQA-MQA.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 18 题：Group Query Attention（GQA）与 Multi-Query Attention（MQA）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/18-GQA-MQA.md\",\"sha\":\"f9874ea22ba7aaaa0253502dc25c513cd563e77f\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/19-RoPE.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 19 题：旋转位置编码（RoPE）及其优势\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/19-RoPE.md\",\"sha\":\"401b3f16a9f1d0bdf82939de85b59fc28115491e\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/20-SwiGLU.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 20 题：SwiGLU 激活函数相比 ReLU / GELU 的优势\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/20-SwiGLU.md\",\"sha\":\"cbe8d6ae4c39c927381a94c844d59d2d85ac71da\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/01-LLM基础/README.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"LLM 基础（第 1–20 题）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"01-LLM基础\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"01-LLM基础/README.md\",\"sha\":\"1d90aeb9b0e30c5db5dc196c28dbbd78f8ebc47d\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/21-AI-Agent与LLM区别.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 21 题：什么是 AI Agent？与单纯 LLM 的核心区别\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/21-AI-Agent与LLM区别.md\",\"sha\":\"b5ca4e4dfe5aa9fa023965355b80890df6f3cb99\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/22-PDA循环.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 22 题：Agent 的感知-决策-执行循环（PDA Loop）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/22-PDA循环.md\",\"sha\":\"20aaae0fcdc32e4bf92a3a88e2dda9a550c1e9b4\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/23-工具使用.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 23 题：工具使用（Tool Use）与 Agent 如何选择和使用工具\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/23-工具使用.md\",\"sha\":\"b40e45b07534a2c9cc248ff4f4068d1c7fd45615\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/24-ReAct.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 24 题：ReAct（Reasoning + Acting）框架的核心思想\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/24-ReAct.md\",\"sha\":\"5e1dfe2cf9f1245ec33bf34e7552511009972df0\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/25-Zero-shot-Few-shot-Auto-CoT.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 25 题：Zero-shot、Few-shot、Auto-CoT 在 Agent 任务中的表现\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/25-Zero-shot-Few-shot-Auto-CoT.md\",\"sha\":\"be364ef8571eceda8ed589733dfda22742e297ca\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/26-多Agent系统.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 26 题：多 Agent 系统（Multi-Agent System）及其优势\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/26-多Agent系统.md\",\"sha\":\"392e9ec83ab144eab3a8ff68ab9ef74ec91ef195\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/27-记忆机制.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 27 题：Agent 中的记忆机制——短期记忆 vs 长期记忆\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/27-记忆机制.md\",\"sha\":\"0a13bbf82e3132f37d3c63270c2306793a603bd7\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/28-规划.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 28 题：规划（Planning）——单步规划 vs 多步规划\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/28-规划.md\",\"sha\":\"39ec4f95ba202b914e03fa7dfbbdc3bc07db04e0\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/29-HuggingGPT-JARVIS.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 29 题：HuggingGPT / JARVIS 的架构设计思想\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/29-HuggingGPT-JARVIS.md\",\"sha\":\"1d95cee57c2623aad637a4c48e25222f6c668eba\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/30-函数调用.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 30 题：函数调用（Function Calling）与工具使用的关系\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/30-函数调用.md\",\"sha\":\"e5b83b00587b95bf3c76d0c9b29820b2bf0cab83\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/31-自我反思.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 31 题：Agent 的自我反思（Self-Reflection）机制\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/31-自我反思.md\",\"sha\":\"00d66d986366dfdc1fcf3bd103c91434f4596941\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/32-工具学习与评估.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 32 题：工具学习（Tool Learning）与如何评估 Agent 的工具使用能力\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/32-工具学习与评估.md\",\"sha\":\"bf735c13898df5c253bd7ac37d145f06151522f2\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/33-多Agent架构对比.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 33 题：Centralized vs Decentralized 多 Agent 架构\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/33-多Agent架构对比.md\",\"sha\":\"587f345e1eade083f66747128c3d2e3082ef654f\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/34-目标分解.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 34 题：Agent 中的目标分解（Goal Decomposition）策略\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/34-目标分解.md\",\"sha\":\"97202fb4a6921cf421a9741ddcea07651a1d78f9\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/35-人机协作.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 35 题：人机协作（Human-in-the-loop）在 Agent 系统中的设计\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/35-人机协作.md\",\"sha\":\"22b12df20aaaec88094e26d6c411dc4dfeaa275a\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/36-自主性谱系.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 36 题：Agent 的自主性（Autonomy）谱系：从简单反射到目标驱动\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/36-自主性谱系.md\",\"sha\":\"e69c955c1fd317057b9a61a00a333594bee44d20\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/37-世界模型.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 37 题：世界模型（World Model）在 Agent 中的作用\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/37-世界模型.md\",\"sha\":\"c7641a9b3d892d60d989dd0d90f8c8b453d2ff9f\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/38-探索与利用.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 38 题：Agent 中的探索 vs 利用（Exploration vs Exploitation）权衡\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/38-探索与利用.md\",\"sha\":\"4b889ef44f68b6d6eaf26f14ee3156b367e59571\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/39-工具学习代表工作.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 39 题：Toolformer、Gorilla、APIBench 在工具学习方面的贡献\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/39-工具学习代表工作.md\",\"sha\":\"2d511b3866d3dbd32d0887353c191180a56b20d8\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/40-Agent幻觉.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 40 题：Agent 的幻觉（Hallucination）及如何检测和缓解\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/40-Agent幻觉.md\",\"sha\":\"db3df3f4d22a49b5a0f5d19e0b9d1180892c3005\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/README.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"Agent 核心概念（第 21–40 题）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/README.md\",\"sha\":\"e3f0b2fe9fb6aa3124064d2ee11bed803857ea3d\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/41-提示工程.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 41 题：提示工程（Prompt Engineering）及其核心原则\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/41-提示工程.md\",\"sha\":\"55324ce2aa7ffbb6cb5a7bfa9a1b7e381323be93\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/42-Zero-One-Few-shot.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 42 题：Zero-shot、One-shot、Few-shot 提示的区别与适用场景\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/42-Zero-One-Few-shot.md\",\"sha\":\"2aca3d470efddea22f8483389148baa43c9ee223\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/43-角色提示.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 43 题：角色提示（Role Prompting）及为何有效\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/43-角色提示.md\",\"sha\":\"3ff46ae8c65ffea296a9abe1ea3c4d273bac0e6e\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/44-CoT设计模式.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 44 题：思维链（Chain-of-Thought）提示的设计模式\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/44-CoT设计模式.md\",\"sha\":\"1ad533cf4054d3d5c4f4d68b0ed9076ed5a8de04\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/45-Zero-shot-CoT与Few-shot-CoT.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 45 题：Zero-shot-CoT 与 Few-shot-CoT 的优缺点\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/45-Zero-shot-CoT与Few-shot-CoT.md\",\"sha\":\"f3100b72fd620130cb52ea7f54dd5d56278b144f\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/46-自一致性.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 46 题：自一致性（Self-Consistency）解码与推理质量提升\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/46-自一致性.md\",\"sha\":\"e42f4b31121d85ee1839bd2de0757d27f2786180\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/47-Least-to-Most.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 47 题：Least-to-Most 提示策略及适用任务\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/47-Least-to-Most.md\",\"sha\":\"56ad19b3bd47bc06e566be7861bd100d664402a3\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/48-提示链.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 48 题：提示链（Prompt Chaining）与单次复杂提示的对比\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/48-提示链.md\",\"sha\":\"982b6e1127807ee7a7248aaf1a3e9c2b60c6b57f\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/49-ReAct提示模板.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 49 题：ReAct 提示模板的设计要素\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/49-ReAct提示模板.md\",\"sha\":\"bade69e4715e41c90986982134f67977243f8e55\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/50-自动提示优化.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 50 题：自动提示优化（Automatic Prompt Optimization）及举例\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/50-自动提示优化.md\",\"sha\":\"2f38b43b1b0f35e3169891b6af889057eef2524e\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/51-手动与自动提示.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 51 题：手动提示工程 vs 自动提示搜索（如 DSPy）的优缺点\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/51-手动与自动提示.md\",\"sha\":\"005de0df2d033bc365a7d919f3390a0764157b44\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/52-结构化提示.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 52 题：结构化提示（Structured Prompting）与 JSON/XML 模式的作用\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/52-结构化提示.md\",\"sha\":\"a5e550315c400948e1fcb29f1398775af40521ae\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/53-上下文压缩.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 53 题：上下文压缩（Context Compression）在长文本场景的应用\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/53-上下文压缩.md\",\"sha\":\"ddb29ab0fa6c117450fc375827ffbc3b607b7553\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/54-提示注入.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 54 题：提示注入（Prompt Injection）攻击与防范\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/54-提示注入.md\",\"sha\":\"0031a784d819ffd8616de77c35284ab726a91afb\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/55-提示越狱.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 55 题：提示越狱（Prompt Jailbreaking）的常见手段与防御策略\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/55-提示越狱.md\",\"sha\":\"3d6ea868d654f9d2cea1d8d9f117de29152632d3\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/56-提示管理方式.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 56 题：OpenAI GPTs、LangChain Templates、LlamaIndex 的提示管理方式\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/56-提示管理方式.md\",\"sha\":\"b9d0a00656ebdef65a91e2e0556aa70f11febf41\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/57-多模态提示.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 57 题：多模态提示（Multimodal Prompting）及设计要点\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/57-多模态提示.md\",\"sha\":\"20d17fd80850de6e22417a97a22472612fbc342a\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/58-动态提示与RAG.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 58 题：动态提示（Dynamic Prompting）在 RAG 系统中的应用\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/58-动态提示与RAG.md\",\"sha\":\"ee3642ae10f676224659c87a3f040e520725156e\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/59-提示版本管理.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 59 题：提示版本管理及在生产环境中的实践\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/59-提示版本管理.md\",\"sha\":\"def3ef67e038c44832ab375a97b15a30076749fa\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/60-提示评估与AB测试.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 60 题：评估提示效果的指标与如何设计提示 A/B 测试\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/60-提示评估与AB测试.md\",\"sha\":\"61c0a1b13b06467722bfebd58772ecbb959a98e7\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/03-提示工程/README.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"提示工程（第 41–60 题）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"03-提示工程\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"03-提示工程/README.md\",\"sha\":\"546ed06f0539519b2f630cbca4557df44b1922dc\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/61-Agent架构设计.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 61 题：具备工具使用能力的 Agent 系统架构设计\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/61-Agent架构设计.md\",\"sha\":\"0752e77063ec5756cfe63755a46537d23b06396f\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/62-工具选择.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 62 题：Agent 的工具选择（Tool Selection）机制\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/62-工具选择.md\",\"sha\":\"5c7f7e9581f75ad269de60d9a58d470ff45bfd96\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/63-规划模块.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 63 题：Agent 的规划模块设计——LLM-based vs 传统规划\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/63-规划模块.md\",\"sha\":\"5465f031ca1ef99d018c5029ee1eb11bacb5d33f\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/64-记忆系统.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 64 题：Agent 的记忆系统设计——向量库、知识图谱、数据库\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/64-记忆系统.md\",\"sha\":\"9b32db94143ed69ab7541e06f2cb6f77a82e7d1a\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/65-自我反思实现.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 65 题：自我反思实现（反思触发与改进机制）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/65-自我反思实现.md\",\"sha\":\"ffe8513c438371fca9ffeff18fc0316280a0696e\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/66-错误恢复.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 66 题：错误恢复机制（工具失败时处理）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/66-错误恢复.md\",\"sha\":\"b96ceaa1531fa5fda937cff2f846d50a13834225\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/67-决策评估.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 67 题：决策质量评估与指标体系\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/67-决策评估.md\",\"sha\":\"58d84e0008c6a26103b30f7fff6e5e356b0dc027\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/68-ReAct-Reflexion-LATS.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 68 题：ReAct、Reflexion、LATS 演进关系\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/68-ReAct-Reflexion-LATS.md\",\"sha\":\"9f19084923e22c2674b96b9596bfc7e4f1fce8fd\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/69-多轮对话与状态.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 69 题：多轮对话与状态持久化\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/69-多轮对话与状态.md\",\"sha\":\"cf3dcfd9078f3fcdcef03afaa5afcff8229db17f\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/70-个性化.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 70 题：个性化（Personalization）与用户画像\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/70-个性化.md\",\"sha\":\"8372fc5484db5844a6f1bd495a1d967a40b41d32\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/71-安全沙箱.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 71 题：安全沙箱与工具权限\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/71-安全沙箱.md\",\"sha\":\"3ff22f5dea3257a7a77757ffbeec017d62065b36\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/72-意图识别.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 72 题：意图识别（Intent Recognition）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/72-意图识别.md\",\"sha\":\"d97d2378edb2922b11ed10c052ddc7b42cc9cd7c\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/73-并发工具调用.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 73 题：并发工具调用（并行 vs 串行）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/73-并发工具调用.md\",\"sha\":\"5b981af430bb79493d8d72db9431d539a96024f8\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/74-日志与可观测性.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 74 题：日志与可观测性\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/74-日志与可观测性.md\",\"sha\":\"9519cd78ca81ef8c23c2a3153b87c164498810c8\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/75-延迟优化.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 75 题：延迟优化策略\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/75-延迟优化.md\",\"sha\":\"14d3503cc474d66baadd947c4e669c06c085f050\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/76-流式响应.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 76 题：流式响应与打字机效果\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/76-流式响应.md\",\"sha\":\"04ce35a3e2e655d276eb0eeaddb9b279bafa8671\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/77-限流与熔断.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 77 题：限流与熔断\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/77-限流与熔断.md\",\"sha\":\"6de0a456aa10b8b96df3237701145c79e05d6fe2\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/78-AB测试框架.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 78 题：A/B 测试框架\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/78-AB测试框架.md\",\"sha\":\"9efcad2b0b9a14b9db069d7b2f25c2577409678d\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/79-缓存策略.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 79 题：缓存策略（常见查询缓存）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/79-缓存策略.md\",\"sha\":\"9b95db7e2af8ef532f82ae05eab246eaaa5c604d\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/80-会话管理.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 80 题：会话管理（Session Management）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/80-会话管理.md\",\"sha\":\"e95e4bde8ce768b06526b74866797e70357911be\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/81-多语言支持.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 81 题：多语言支持\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/81-多语言支持.md\",\"sha\":\"7cf8e7e62d332f50930a72ca71ad1887983747f8\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/82-反馈与学习.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 82 题：反馈收集与持续学习\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/82-反馈与学习.md\",\"sha\":\"b903cc126ac16649c6e03381b3d8cdc246f62ba6\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/83-冷启动.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 83 题：冷启动问题（新工具快速掌握）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/83-冷启动.md\",\"sha\":\"6c8fa5a062cf4f499714f62a0ce52251bf4178c8\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/84-优雅降级.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 84 题：优雅降级（Graceful Degradation）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/84-优雅降级.md\",\"sha\":\"633ef11c5226f5bad899e8d1ba48d09716ec8e13\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/85-指标监控.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 85 题：指标监控与 SLI/SLO\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/85-指标监控.md\",\"sha\":\"6ed587208530bc473816ac04d41110d3b4dd01c1\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/04-单Agent架构/README.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"单 Agent 架构（第 61–85 题）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"04-单Agent架构\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"04-单Agent架构/README.md\",\"sha\":\"be8c422b2a5dbc63096cca591874bc80192fa525\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/100-权限与访问控制.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 100 题：多 Agent 的权限与访问控制（RBAC/ABAC）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/100-权限与访问控制.md\",\"sha\":\"49e488921ce02de8a01b837d578c0f5d0aa3c290\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/101-调试与追踪工具.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 101 题：多 Agent 的调试与追踪工具\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/101-调试与追踪工具.md\",\"sha\":\"2e9cc0db836318ddc05e3e1d75d4d6e17813cc49\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/102-编排与编舞.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 102 题：多 Agent 的编排（Orchestration）vs 编舞（Choreography）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/102-编排与编舞.md\",\"sha\":\"56e3b962d65895dcd6294ebdcd82cf10b840c423\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/103-优雅关闭与状态持久化.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 103 题：多 Agent 的优雅关闭与状态持久化\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/103-优雅关闭与状态持久化.md\",\"sha\":\"30b643c81c5f92e2d68f62e422f6368ebf21f62e\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/104-成本优化策略.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 104 题：多 Agent 的成本优化策略\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/104-成本优化策略.md\",\"sha\":\"cf801067f3680c31d443635183984a9e3e0bd65a\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/105-仿真环境设计.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 105 题：多 Agent 的仿真环境设计\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/105-仿真环境设计.md\",\"sha\":\"82a75d713014f823926e575a8eb0beeace3affa0\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/106-Agent自动发现.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 106 题：Agent 自动发现（Service Discovery）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/106-Agent自动发现.md\",\"sha\":\"6727595cd2dea81223ee4615f301fbfcf7a36c59\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/107-日志聚合与链路追踪.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 107 题：多 Agent 的日志聚合与链路追踪\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/107-日志聚合与链路追踪.md\",\"sha\":\"8a5cef7eb6b5cf5d247814033357daca2c93e116\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/108-联邦学习应用场景.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 108 题：多 Agent 中的联邦学习应用场景\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/108-联邦学习应用场景.md\",\"sha\":\"c067a03e97003ae30f57d729c37f810f06d59a83\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/109-模型微调数据收集.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 109 题：多 Agent 场景下的模型微调数据收集\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/109-模型微调数据收集.md\",\"sha\":\"29ed07113e83db4c7d3a7a15f0e282050cfd9271\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/110-安全隔离机制.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 110 题：多 Agent 的安全隔离机制\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/110-安全隔离机制.md\",\"sha\":\"23da7aa7d455c8bbad9df04af93788a80414f3f1\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/86-多Agent协作系统.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 86 题：多 Agent 协作系统——角色分工与通信机制\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/86-多Agent协作系统.md\",\"sha\":\"c8dc3ee2e1b7317e3617540609a12f9e5c3f74e1\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/87-CrewAI-AutoGen-MetaGPT.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 87 题：CrewAI、AutoGen、MetaGPT 的架构差异与适用场景\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/87-CrewAI-AutoGen-MetaGPT.md\",\"sha\":\"e33151eb6e18a7c7412907f98823e82e2bc4280d\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/88-任务委托与结果汇总.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 88 题：Agent 间的任务委托（Delegation）与结果汇总\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/88-任务委托与结果汇总.md\",\"sha\":\"811ab4d34f42c940262f2eb8d1792f2102ec5042\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/89-冲突解决机制.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 89 题：多 Agent 系统的冲突解决机制\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/89-冲突解决机制.md\",\"sha\":\"10a962c52719b51eb47eede81802c21b6cfe5a90\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/90-共识机制.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 90 题：多 Agent 中的共识机制（Consensus Mechanism）设计\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/90-共识机制.md\",\"sha\":\"08ee23f0a3f8139ea3ca4481d6a8eb6c80d6b972\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/91-负载均衡.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 91 题：多 Agent 的负载均衡与动态任务分配\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/91-负载均衡.md\",\"sha\":\"d65522e39ebe2d8254ef4ce91ce58f565a820440\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/92-容错机制.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 92 题：多 Agent 系统的容错机制\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/92-容错机制.md\",\"sha\":\"1b49c3b90c5af1618588ca3053a84ec4f123d748\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/93-层级与扁平架构.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 93 题：多 Agent 的层级架构 vs 扁平架构\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/93-层级与扁平架构.md\",\"sha\":\"d0e0e1851e17068ccf438483763e2f76af408703\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/94-知识共享.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 94 题：Agent 间的知识共享——共享内存 vs 消息传递\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/94-知识共享.md\",\"sha\":\"f526603ecae4d4bdaf1f546aa3598f5c139b18cc\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/95-模拟软件开发团队.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 95 题：模拟软件开发团队的多 Agent 系统（如 MetaGPT）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/95-模拟软件开发团队.md\",\"sha\":\"26b0714bfb4f1542b2751956e918c89dad2d1ee9\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/96-竞争与合作.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 96 题：多 Agent 中的竞争与合作建模\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/96-竞争与合作.md\",\"sha\":\"7dc4ef94e88c407c5943498e2e579af87f3668a1\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/97-分布式部署.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 97 题：多 Agent 的分布式部署\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/97-分布式部署.md\",\"sha\":\"83fffa2b5a710de7c31e86f8afa324a238f474c9\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/98-动态扩缩容.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 98 题：多 Agent 的动态扩缩容\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/98-动态扩缩容.md\",\"sha\":\"930719d954556656f33e78be0ae330da55ca0b5c\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/99-涌现行为及其管理.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 99 题：多 Agent 的涌现行为（Emergent Behavior）及其管理\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/99-涌现行为及其管理.md\",\"sha\":\"e5b7d6f7b902a1bbcdce3f60d6b40d1084d9e352\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/05-多Agent系统/README.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"多 Agent 系统（第 86–110 题）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"05-多Agent系统\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"05-多Agent系统/README.md\",\"sha\":\"2797662763d49121af7a2fc93004d51793916661\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/111-RAG基础.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 111 题：RAG 基础与流程\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/111-RAG基础.md\",\"sha\":\"05e8bf179eb8e88fb08ac24419252bd53ca0fb38\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/112-检索策略.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 112 题：RAG 检索策略——稠密检索、稀疏检索与混合检索\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/112-检索策略.md\",\"sha\":\"a84954e82557d79c4becc880b341d1fce9c705f7\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/113-分块策略.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 113 题：RAG 分块策略（Chunking）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/113-分块策略.md\",\"sha\":\"d998f94678f430e191bb63124772ac61e53c6150\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/114-向量数据库选型.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 114 题：RAG 向量数据库选型\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/114-向量数据库选型.md\",\"sha\":\"32190c8aa11d664004432c2c3a31b26064a809aa\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/115-重排序.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 115 题：RAG 重排序（Reranker）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/115-重排序.md\",\"sha\":\"fa32eedce6af27bdd495ea101c9208801eb1b4b8\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/116-查询改写与扩展.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 116 题：RAG 查询改写与扩展\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/116-查询改写与扩展.md\",\"sha\":\"4972fee8054434b7d47bea17457ccf338a21c37c\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/117-GraphRAG与知识图谱.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 117 题：GraphRAG 与知识图谱 RAG\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/117-GraphRAG与知识图谱.md\",\"sha\":\"9fa7f73aa0cde08ffc941a00b5b6a4eb03b170dd\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/118-多路召回与融合.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 118 题：RAG 多路召回与融合\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/118-多路召回与融合.md\",\"sha\":\"ea21bfa181cbffa3a850ea48b836ef49b0c5509e\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/119-RAG评估指标.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 119 题：RAG 评估指标\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/119-RAG评估指标.md\",\"sha\":\"1f2f0c8f975144e4b3d7c9abf90939db65232db9\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/120-RAG幻觉与引用.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 120 题：RAG 幻觉与引用溯源\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/120-RAG幻觉与引用.md\",\"sha\":\"f794161c3d33bf2c966c43c5c2fa5a16314fa0ba\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/121-上下文窗口与压缩.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 121 题：RAG 上下文窗口与压缩\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/121-上下文窗口与压缩.md\",\"sha\":\"3818a78e8958d0cf4c5a0c00e63ab6fe32d65516\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/122-多模态RAG.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 122 题：多模态 RAG\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/122-多模态RAG.md\",\"sha\":\"7b9e2a28a653598fb740c633a3d3abf0c7c7c5db\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/123-实时与增量更新.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 123 题：RAG 实时与增量更新\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/123-实时与增量更新.md\",\"sha\":\"e5ea7ccc5969700e84b01e092abc6fcd6650d7d5\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/124-RAG与Agent结合.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 124 题：RAG 与 Agent 结合\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/124-RAG与Agent结合.md\",\"sha\":\"f9c50f9f64bb9e692485ec6061ba6b8be184dd21\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/125-文档解析与预处理.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 125 题：RAG 文档解析与预处理\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/125-文档解析与预处理.md\",\"sha\":\"894cfce899ab9c5ff45a6346bf7f9de907f51a35\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/126-RAG与微调对比.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 126 题：RAG 与微调对比——何时用 RAG、何时用微调\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/126-RAG与微调对比.md\",\"sha\":\"a11be37b3a05c87e0db56308a1345dfd9e0091c2\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/127-RAG安全与权限.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 127 题：RAG 安全与权限控制\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/127-RAG安全与权限.md\",\"sha\":\"49a70fa2a23279e2b211d146fb6074ec4777e0ba\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/128-多文档多源RAG.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 128 题：多文档与多源 RAG\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/128-多文档多源RAG.md\",\"sha\":\"7c452005d4426e65c1339b8cd2c7f7be4d1667b7\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/129-RAG可观测与调试.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 129 题：RAG 可观测与调试\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/129-RAG可观测与调试.md\",\"sha\":\"94a84c655059d95e3155fb227bef28e96c70e03b\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/130-RAG生产实践与部署.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 130 题：RAG 生产实践与部署\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/130-RAG生产实践与部署.md\",\"sha\":\"348fe488364bcc616db38178ff1e9ccf17c13f13\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/06-RAG与知识增强/README.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"RAG 与知识增强（第 111–130 题）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"06-RAG与知识增强\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"06-RAG与知识增强/README.md\",\"sha\":\"8e7f5112add8746cfa32dfa3a58edfa4ba4a8d83\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/131-LangChain概述.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 131 题：LangChain 概述与核心概念\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/131-LangChain概述.md\",\"sha\":\"9b247f9062350c57ab99ffe1680e8ca5ee789014\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/132-LangChain与Agent.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 132 题：LangChain 与 Agent 开发\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/132-LangChain与Agent.md\",\"sha\":\"81882546b5df22b2956e152cd9c29a80680390fa\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/133-LlamaIndex概述.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 133 题：LlamaIndex 概述与核心概念\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/133-LlamaIndex概述.md\",\"sha\":\"69553b474a98aa80987fb422a4b1e73daf9e278b\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/134-LlamaIndex与RAG.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 134 题：LlamaIndex 与 RAG 开发\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/134-LlamaIndex与RAG.md\",\"sha\":\"c16991873ec2218d0187e392bc452e44363ac188\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/135-向量库集成.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 135 题：向量库集成与选型\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/135-向量库集成.md\",\"sha\":\"a454f4bd66125b4d6c6575e5f4defc4eaa866247\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/136-工具调用与FunctionCalling.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 136 题：工具调用与 Function Calling\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/136-工具调用与FunctionCalling.md\",\"sha\":\"ca244c2d3fcc6512a40d865663fc858f002cebe2\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/137-链与工作流.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 137 题：链与工作流编排\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/137-链与工作流.md\",\"sha\":\"a3af8aa00c3b66a2fb2e7aa591b0349d08a4aad5\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/138-记忆与状态.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 138 题：记忆与状态管理\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/138-记忆与状态.md\",\"sha\":\"7f6e6d35dfeda88b8a69f4dcc722490c0ae83cb8\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/139-提示模板与管理.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 139 题：提示模板与管理\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/139-提示模板与管理.md\",\"sha\":\"80a84e2ad866b3ce62712d178b5090bf7115d4a2\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/140-评估与测试.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 140 题：评估与测试框架\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/140-评估与测试.md\",\"sha\":\"be78c0d2bcdabeb757bb1a1924c7532d2b0d7a2f\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/141-模型部署与Serving.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 141 题：模型部署与 Serving\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/141-模型部署与Serving.md\",\"sha\":\"37310cf49f0bb513e493da327c43ff22f99825e4\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/142-Docker与容器化.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 142 题：Docker 与容器化部署\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/142-Docker与容器化.md\",\"sha\":\"219a4f174627e89f6157d19ab3b956ca8bde67f9\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/143-推理引擎.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 143 题：vLLM、TGI 等推理引擎\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/143-推理引擎.md\",\"sha\":\"6fd3eea8bcb4f070b7afbbdf643cdbbc91b87181\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/144-流式输出.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 144 题：流式输出实现\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/144-流式输出.md\",\"sha\":\"29adde8398cc81fc5beee341d14d36338c222439\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/145-多模型路由.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 145 题：多模型路由与负载\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/145-多模型路由.md\",\"sha\":\"4b004edfe6c46f3f8b18a52c25215e1d3c8a9803\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/146-成本与用量监控.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 146 题：成本与用量监控\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/146-成本与用量监控.md\",\"sha\":\"8878953dc40bfea17a4db3b8e4196eb1a75c0135\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/147-版本与实验管理.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 147 题：版本与实验管理\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/147-版本与实验管理.md\",\"sha\":\"ac911c39e322bb412b0397ba26af074db7071b7c\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/148-开源Agent框架对比.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 148 题：开源 Agent 框架对比\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/148-开源Agent框架对比.md\",\"sha\":\"0076ccae76c3939e2d263dc91ba3830a4a374b11\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/149-低代码平台.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 149 题：低代码/无代码平台\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/149-低代码平台.md\",\"sha\":\"5e746abac487497e53fef2f781d9851cdb922916\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/150-API设计规范.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 150 题：API 设计规范\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/150-API设计规范.md\",\"sha\":\"e90c9ce7e945f4fe06a79c8375430312b5357349\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/151-SDK与多语言.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 151 题：SDK 与多语言支持\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/151-SDK与多语言.md\",\"sha\":\"90a043dd191aaefe1b3f23509f814358d9586e56\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/152-插件与扩展.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 152 题：插件与扩展机制\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/152-插件与扩展.md\",\"sha\":\"05e9f389e40942a7ac9b8c6aebea204e2747d5ee\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/153-企业级特性.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 153 题：企业级特性\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/153-企业级特性.md\",\"sha\":\"efd71aefe0319760ba85bbeef65a895e427dea4e\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/154-云服务选型.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 154 题：云服务选型\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/154-云服务选型.md\",\"sha\":\"c150dca3c88617e30275e06488c5798c76b7886f\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/155-本地与边缘部署.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 155 题：本地与边缘部署\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/155-本地与边缘部署.md\",\"sha\":\"01f716d0c886301248f91ec34991620a3b3196a6\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/156-可观测与追踪.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 156 题：可观测与链路追踪\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/156-可观测与追踪.md\",\"sha\":\"78eb1615fd2c9177bf22386950337085faa87612\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/157-安全与密钥管理.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 157 题：安全与密钥管理\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/157-安全与密钥管理.md\",\"sha\":\"6337ab5d5e5a4c9df081a3999d8f33876989877c\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/158-开源合规.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 158 题：开源合规与许可\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/158-开源合规.md\",\"sha\":\"f68a996185562ba6588808ef6787abc3fa789312\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/159-社区与生态.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 159 题：社区与生态\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/159-社区与生态.md\",\"sha\":\"4e38b11ca4b25cfcc260b0d0306d0d174ad54351\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/160-框架选型.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 160 题：框架选型决策\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/160-框架选型.md\",\"sha\":\"0656ae0ed2fc243167813c6702f86740c23b39c4\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/07-开发框架与工具/README.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"开发框架与工具（第 131–160 题）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"07-开发框架与工具\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"07-开发框架与工具/README.md\",\"sha\":\"0544c0b843e762753ad49639995bb0a900167bcb\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/161-企业系统集成.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 161 题：企业系统集成概述\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/161-企业系统集成.md\",\"sha\":\"0cb49f6ae94cce8e404c0df547a0fd955e72e824\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/162-API设计与集成.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 162 题：API 设计与集成\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/162-API设计与集成.md\",\"sha\":\"6bcb03240b18f223f1a526ea4f7e375e9533cc48\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/163-多模态输入输出.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 163 题：多模态输入输出集成\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/163-多模态输入输出.md\",\"sha\":\"c86a3c8ed49f27cb801b26df07266506b4f76a0d\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/164-代码执行与沙箱.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 164 题：代码执行与沙箱集成\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/164-代码执行与沙箱.md\",\"sha\":\"13f44ae4e5c409dd28f56a4319092db509b02d0c\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/165-数据库与数据源.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 165 题：数据库与数据源集成\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/165-数据库与数据源.md\",\"sha\":\"93740edf22676b15d4b48a33973b2c4af45c64fc\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/166-消息队列与事件驱动.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 166 题：消息队列与事件驱动\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/166-消息队列与事件驱动.md\",\"sha\":\"14cf67e46800776cf4aad559ab63a17a3939546d\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/167-身份认证与SSO.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 167 题：身份认证与 SSO 集成\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/167-身份认证与SSO.md\",\"sha\":\"4dd16de90185e4fab25d398ca4c6d51b6765cf1f\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/168-工作流引擎集成.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 168 题：工作流引擎集成\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/168-工作流引擎集成.md\",\"sha\":\"312ccd949291acf678ef3bb819f1e6e696286f6d\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/169-现有业务系统对接.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 169 题：与现有业务系统对接\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/169-现有业务系统对接.md\",\"sha\":\"d1df4c7e0d50c12f41d08bf2c8b1a14e9f2f8ae1\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/170-数据同步与一致性.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 170 题：数据同步与一致性\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/170-数据同步与一致性.md\",\"sha\":\"b0c35fc89510db5e3735095bbc33eafac3d16a67\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/171-多租户架构.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 171 题：多租户架构集成\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/171-多租户架构.md\",\"sha\":\"80228594a5df2b0e9b3bf39e9a99655c414e6756\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/172-审计与合规日志.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 172 题：审计与合规日志集成\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/172-审计与合规日志.md\",\"sha\":\"fd3b0e07633c6fb7aafa4e6861f1efedae1a67c1\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/173-灰度与发布策略.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 173 题：灰度与发布策略\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/173-灰度与发布策略.md\",\"sha\":\"6a03b537c39dac473e594258166bbd28f0bcfcb7\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/174-回滚与故障恢复.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 174 题：回滚与故障恢复\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/174-回滚与故障恢复.md\",\"sha\":\"cd04eb74706f64f7c769b2626afc824a832b4a34\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/175-配置中心与动态配置.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 175 题：配置中心与动态配置\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/175-配置中心与动态配置.md\",\"sha\":\"832e82747c05bd26f786e6bc9b87216691c4c551\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/176-服务网格与API网关.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 176 题：服务网格与 API 网关\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/176-服务网格与API网关.md\",\"sha\":\"f395c59eae779253f081bdfe3caee0872561b52f\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/177-跨系统数据格式.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 177 题：跨系统数据格式\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/177-跨系统数据格式.md\",\"sha\":\"9fd1d1c91b8c0409de9cb29afbc06c95e62363a6\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/178-实时通信.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 178 题：实时通信（WebSocket/SSE）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/178-实时通信.md\",\"sha\":\"395a3e6dc35205a83b0b9ba91ff4c3f406b0fa1c\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/179-批处理与异步任务.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 179 题：批处理与异步任务\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/179-批处理与异步任务.md\",\"sha\":\"fbcdc3f96331636d286741645e2d3f735323f41f\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/180-第三方服务对接.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 180 题：第三方服务对接\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/180-第三方服务对接.md\",\"sha\":\"1400aea3a9d4d354a20c260430cb823183c288cc\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/181-数据迁移与兼容.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 181 题：数据迁移与兼容\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/181-数据迁移与兼容.md\",\"sha\":\"f32bfec25297ed6de9d52c2c7e0d321df3f71628\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/182-监控与告警集成.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 182 题：监控与告警集成\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/182-监控与告警集成.md\",\"sha\":\"0277d29385ce380feed9b4a620faa7235129a11a\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/183-多环境与多区域.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 183 题：多环境与多区域\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/183-多环境与多区域.md\",\"sha\":\"010355cd12e8979b9a910bb21a3d1cc9c84fcb41\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/184-开放平台与生态.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 184 题：开放平台与生态集成\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/184-开放平台与生态.md\",\"sha\":\"f20e7d570b1690fa67ee6f411ceef46dcef75031\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/185-系统集成最佳实践.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 185 题：系统集成最佳实践\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/185-系统集成最佳实践.md\",\"sha\":\"563477311ab3abf63933937d9ea220c9995c44d8\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/08-系统集成/README.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"系统集成（第 161–185 题）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"08-系统集成\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"08-系统集成/README.md\",\"sha\":\"9f3a6d57951626c38621c050f44c3345bccfcf6b\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/186-延迟优化.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 186 题：延迟优化概述\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/186-延迟优化.md\",\"sha\":\"cfc71ec28b9910a10ca054aac476b577980ca04f\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/187-首token延迟.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 187 题：首 token 延迟（TTFT）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/187-首token延迟.md\",\"sha\":\"ad52355bc88306b4dd3c67cb5d80e40efc40bbbc\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/188-端到端延迟分析.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 188 题：端到端延迟分析\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/188-端到端延迟分析.md\",\"sha\":\"86d55e0a1784fc199af68accf06191059f49a329\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/189-缓存策略与实现.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 189 题：缓存策略与实现\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/189-缓存策略与实现.md\",\"sha\":\"381f61fd4b49708f9c047232a758fb44b1aefbb7\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/190-请求级与结果缓存.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 190 题：请求级与结果缓存\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/190-请求级与结果缓存.md\",\"sha\":\"15cc943a42456089b55f48befafa5b2e52ae1888\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/191-语义缓存.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 191 题：语义缓存\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/191-语义缓存.md\",\"sha\":\"3f9cb7ac6a4a53e0ef1daa75fb8a75414a18554d\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/192-模型量化推理.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 192 题：模型量化（推理）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/192-模型量化推理.md\",\"sha\":\"b00a017b7d9f8cda6dfb888b6b8a7368af5a7d34\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/193-量化与精度权衡.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 193 题：量化与精度权衡\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/193-量化与精度权衡.md\",\"sha\":\"9e1a17245360e47b2f648b15991541cf41736ef9\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/194-KV-Cache优化.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 194 题：KV Cache 优化\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/194-KV-Cache优化.md\",\"sha\":\"8fb203c9e253e9862fde77d26d59e4ea7faa4747\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/195-批处理与连续批处理.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 195 题：批处理与连续批处理\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/195-批处理与连续批处理.md\",\"sha\":\"324ee43ffdfda04e95620e63458da40ce5aefa73\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/196-投机采样.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 196 题：投机采样（Speculative Decoding）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/196-投机采样.md\",\"sha\":\"32bf008e4e8b44a882d3f1557f16f1d9d71a351c\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/197-负载均衡策略.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 197 题：负载均衡策略\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/197-负载均衡策略.md\",\"sha\":\"66d3cfc2c458eff95d4798d5318ae1a23fbc747a\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/198-推理服务扩缩容.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 198 题：推理服务扩缩容\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/198-推理服务扩缩容.md\",\"sha\":\"d98088e77bddffe232541e9e17b5c3d5be72f756\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/199-成本与延迟权衡.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 199 题：成本与延迟权衡\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/199-成本与延迟权衡.md\",\"sha\":\"badb40f89aad25ae2100f40f6aab81f0f5a80c03\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/200-多模型路由与分流.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 200 题：多模型路由与分流\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/200-多模型路由与分流.md\",\"sha\":\"9757fe673671ab27e6a98784434eee89465b4ba0\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/201-流式与延迟.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 201 题：流式与延迟\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/201-流式与延迟.md\",\"sha\":\"09080c389f669477822ee8b57190141c92686719\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/202-检索与RAG延迟.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 202 题：检索与 RAG 延迟\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/202-检索与RAG延迟.md\",\"sha\":\"e9baa058da8cea11b3ffbe59bdd921689c44d763\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/203-工具调用延迟.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 203 题：工具调用延迟\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/203-工具调用延迟.md\",\"sha\":\"affcafc65bf73719d660caa69b636cc33af8b43d\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/204-内存与显存优化.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 204 题：内存与显存优化\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/204-内存与显存优化.md\",\"sha\":\"f3266bbeec785759005d1ca8f6890220e4825157\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/205-批大小与吞吐.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 205 题：批大小与吞吐\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/205-批大小与吞吐.md\",\"sha\":\"d4dde955e0afab82523919cbacf4a5bdb0e38978\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/206-长上下文优化.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 206 题：长上下文优化\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/206-长上下文优化.md\",\"sha\":\"651614a1188a39c6b6a69d84aebc45f80af2bc2e\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/207-边缘与端侧推理.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 207 题：边缘与端侧推理\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/207-边缘与端侧推理.md\",\"sha\":\"0dcf85411aeeaad64741ed372d3022493114b9f8\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/208-性能基准与压测.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 208 题：性能基准与压测\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/208-性能基准与压测.md\",\"sha\":\"3ba58956893a36a25cb44692ee5ba9472ee1fd28\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/209-性能监控与调优.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 209 题：性能监控与调优\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/209-性能监控与调优.md\",\"sha\":\"51741a9227215ca0754b26a3359efde33bcb21ba\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/210-性能优化最佳实践.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 210 题：性能优化最佳实践\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/210-性能优化最佳实践.md\",\"sha\":\"0f3e39962bf64cededcb48b619ef71507fe422d3\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/09-性能优化/README.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"性能优化（第 186–210 题）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"09-性能优化\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"09-性能优化/README.md\",\"sha\":\"02c75cb44e67acd7f27fa5a20a720e1b3be3d18b\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/211-提示注入与防护.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 211 题：提示注入与防护\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/211-提示注入与防护.md\",\"sha\":\"f798a55cda4ac1b11981806bf0945110478be7b6\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/212-权限与访问控制.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 212 题：权限与访问控制\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/212-权限与访问控制.md\",\"sha\":\"e0cd58a6f2c7c399863476ec76b278a6680ad57d\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/213-数据安全与隐私.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 213 题：数据安全与隐私\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/213-数据安全与隐私.md\",\"sha\":\"32d9939313690c1fccf4f81bf1d687ae17fe1544\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/214-审计与合规.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 214 题：审计与合规\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/214-审计与合规.md\",\"sha\":\"0b0b41c1c21f7d0c87bf9bf8c5b485526fcc80d7\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/215-安全沙箱.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 215 题：安全沙箱\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/215-安全沙箱.md\",\"sha\":\"00994a6f4ea8c37f395aded6fb8af29b7d90e048\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/216-输入输出过滤.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 216 题：输入输出过滤\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/216-输入输出过滤.md\",\"sha\":\"ab3bdc7eebff10a1ff205eba9637372ca98ed9f7\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/217-密钥与凭证管理.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 217 题：密钥与凭证管理\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/217-密钥与凭证管理.md\",\"sha\":\"70fad7725adbaa6b5bd357844f88dfb48fc6e779\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/218-安全开发生命周期.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 218 题：安全开发生命周期\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/218-安全开发生命周期.md\",\"sha\":\"a574bf03aaf4d3df58e98388cd60de1fec69acd2\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/219-对抗样本与鲁棒性.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 219 题：对抗样本与鲁棒性\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/219-对抗样本与鲁棒性.md\",\"sha\":\"b422f46010324417c2c6c3ea617f5e3d60f47b65\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/220-模型与数据泄露防护.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 220 题：模型与数据泄露防护\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/220-模型与数据泄露防护.md\",\"sha\":\"22ab2d61089fc733475e73dd06e74f3ac1a4f1e0\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/221-第三方依赖安全.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 221 题：第三方依赖安全\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/221-第三方依赖安全.md\",\"sha\":\"2db386a7cd4b94c89f126c91ee142356ca3073fd\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/222-安全监控与应急.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 222 题：安全监控与应急\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/222-安全监控与应急.md\",\"sha\":\"5a5443a468cc31b859b43324baf0e53862dcd177\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/223-合规与认证.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 223 题：合规与认证\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/223-合规与认证.md\",\"sha\":\"f7bed33267231af2d6fc3b4194fbcda74286df46\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/224-红队与渗透测试.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 224 题：红队与渗透测试\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/224-红队与渗透测试.md\",\"sha\":\"cff8724d037cd4f1b1295e6393e58e55d38c468b\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/225-安全架构设计.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 225 题：安全架构设计\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/225-安全架构设计.md\",\"sha\":\"3c1fecda87834bcc6dad0a8bfcedf2f27567122d\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/226-多租户安全.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 226 题：多租户安全\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/226-多租户安全.md\",\"sha\":\"265314cace6ac6b7eda1987ffc648a178b85f007\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/227-API安全.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 227 题：API 安全\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/227-API安全.md\",\"sha\":\"99a6e96762665850a1990236e5a310188a02f47c\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/228-供应链安全.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 228 题：供应链安全\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/228-供应链安全.md\",\"sha\":\"35b88c8e5108919b9bba365b82516782f73550c7\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/229-安全培训与意识.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 229 题：安全培训与意识\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/229-安全培训与意识.md\",\"sha\":\"a883fa8b5e1b3f908b0bd7cc040f6491c5276c43\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/230-事件响应.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 230 题：事件响应\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/230-事件响应.md\",\"sha\":\"a9f71590af826a443036f044a7f36900fdf8b312\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/231-隐私计算.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 231 题：隐私计算\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/231-隐私计算.md\",\"sha\":\"559f3fb69a7272ff7cd985934d0cff585184018e\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/232-安全策略与治理.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 232 题：安全策略与治理\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/232-安全策略与治理.md\",\"sha\":\"f427f3dcdc0853961df8f877d37d371763693a4e\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/233-安全度量与指标.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 233 题：安全度量与指标\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/233-安全度量与指标.md\",\"sha\":\"2079321da8d68e804ae13e71df15f93e53a4e0c3\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/234-内容安全与审核.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 234 题：内容安全与审核\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/234-内容安全与审核.md\",\"sha\":\"82a4915f78dd949891f226ceeda6b5a7b828b663\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/235-安全最佳实践.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 235 题：安全最佳实践\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/235-安全最佳实践.md\",\"sha\":\"a9862377a73f0a0c74ec4aa775aef3da44cfb960\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/10-安全/README.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"安全（第 211–235 题）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"10-安全\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"10-安全/README.md\",\"sha\":\"99e239b442aa64e8ae5cd3047551dde4c1a33b26\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/11-AI治理与伦理/236-AI对齐概述.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 236 题：AI 对齐概述\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"11-AI治理与伦理\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"11-AI治理与伦理/236-AI对齐概述.md\",\"sha\":\"b0fa0b10d9be814236fe607348bbb528c49d9294\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/11-AI治理与伦理/237-RLHF与人类反馈.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 237 题：RLHF 与人类反馈\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"11-AI治理与伦理\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"11-AI治理与伦理/237-RLHF与人类反馈.md\",\"sha\":\"c842831ebad043e32d1786beba9ee7182763e40b\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/11-AI治理与伦理/238-可解释性与可审计.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 238 题：可解释性与可审计\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"11-AI治理与伦理\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"11-AI治理与伦理/238-可解释性与可审计.md\",\"sha\":\"f753c45f404408c0446b9dbd27aa8a77c0065949\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/11-AI治理与伦理/239-公平性与偏见.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 239 题：公平性与偏见\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"11-AI治理与伦理\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"11-AI治理与伦理/239-公平性与偏见.md\",\"sha\":\"acf74a5e8de9531de5409f56bc1e8f5e8e101e00\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/11-AI治理与伦理/240-问责与责任.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 240 题：问责与责任\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"11-AI治理与伦理\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"11-AI治理与伦理/240-问责与责任.md\",\"sha\":\"e41dc75cfc86986128522d3280a8b080b1d2bd9f\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/11-AI治理与伦理/241-价值对齐.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 241 题：价值对齐\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"11-AI治理与伦理\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"11-AI治理与伦理/241-价值对齐.md\",\"sha\":\"43b172bcbb1768ed364b9d3dff71d28ef5ddc9dd\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/11-AI治理与伦理/242-透明与披露.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 242 题：透明与披露\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"11-AI治理与伦理\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"11-AI治理与伦理/242-透明与披露.md\",\"sha\":\"1052ceef897661fddf315a32d7ccaefe1e6b3b8c\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/11-AI治理与伦理/243-伦理决策框架.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 243 题：伦理决策框架\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"11-AI治理与伦理\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"11-AI治理与伦理/243-伦理决策框架.md\",\"sha\":\"70f5426feb010ee648b3ed8ad1df08011362ff5e\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/11-AI治理与伦理/244-AI伦理风险.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 244 题：AI 伦理风险\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"11-AI治理与伦理\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"11-AI治理与伦理/244-AI伦理风险.md\",\"sha\":\"7269a049934c49082325617c7183296c4308a8d1\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/11-AI治理与伦理/245-治理框架与标准.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 245 题：治理框架与标准\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"11-AI治理与伦理\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"11-AI治理与伦理/245-治理框架与标准.md\",\"sha\":\"049dfcdcbbbe1cbdb7e6a5e277127e62467574a1\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/11-AI治理与伦理/246-人机协作伦理.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 246 题：人机协作伦理\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"11-AI治理与伦理\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"11-AI治理与伦理/246-人机协作伦理.md\",\"sha\":\"ac5d2ad14f067c00b30a57d835d8f511b3c55866\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/11-AI治理与伦理/247-可持续发展与责任.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 247 题：可持续发展与责任\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"11-AI治理与伦理\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"11-AI治理与伦理/247-可持续发展与责任.md\",\"sha\":\"d8ca9717432906fd118c202de52b13a1be9fdcf4\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/11-AI治理与伦理/248-伦理与商业平衡.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 248 题：伦理与商业平衡\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"11-AI治理与伦理\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"11-AI治理与伦理/248-伦理与商业平衡.md\",\"sha\":\"dba32f6caac63a04891d8ce6d1b74fb225d1f5d5\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/11-AI治理与伦理/249-国际与跨文化.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 249 题：国际与跨文化\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"11-AI治理与伦理\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"11-AI治理与伦理/249-国际与跨文化.md\",\"sha\":\"ed8b6bfb38ec74851c6517304cff068445339588\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/11-AI治理与伦理/250-AI治理与伦理总结.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 250 题：AI 治理与伦理总结\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"11-AI治理与伦理\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"11-AI治理与伦理/250-AI治理与伦理总结.md\",\"sha\":\"f9e6f2857250fe80b7fde342b2df27b697f1995d\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/11-AI治理与伦理/README.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"AI 治理与伦理（第 236–250 题）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"11-AI治理与伦理\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"11-AI治理与伦理/README.md\",\"sha\":\"ab4623e859e139c17a3e97e4139ee0485db7e8e8\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/251-多模态Agent.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 251 题：多模态 Agent\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/251-多模态Agent.md\",\"sha\":\"8702446ad7a6f5479c8b0d61eb5c6e9a34f3f410\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/252-RAG演进与前沿.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 252 题：RAG 演进与前沿\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/252-RAG演进与前沿.md\",\"sha\":\"77252508203d957522edde670a8e94f680aa3663\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/253-规划与推理演进.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 253 题：规划与推理演进\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/253-规划与推理演进.md\",\"sha\":\"92766ea3dd942671ca525520713907eb374ad5fa\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/254-具身智能与机器人.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 254 题：具身智能与机器人\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/254-具身智能与机器人.md\",\"sha\":\"0f4d7caf9adc1bd98d285201be861d3d4e470460\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/255-大模型与Agent融合.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 255 题：大模型与 Agent 融合\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/255-大模型与Agent融合.md\",\"sha\":\"aa266f8e9bd1939d0e7fcf3f149fe1e71a0d71c7\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/256-长上下文与无限上下文.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 256 题：长上下文与无限上下文\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/256-长上下文与无限上下文.md\",\"sha\":\"0e1aacfac5897cf01b18d387666be54618b85215\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/257-小型化与边缘Agent.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 257 题：小型化与边缘 Agent\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/257-小型化与边缘Agent.md\",\"sha\":\"fd65a5ba487eded02ade79afa1116e3ccf435eb3\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/258-世界模型与模拟.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 258 题：世界模型与模拟\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/258-世界模型与模拟.md\",\"sha\":\"c0d9095ab18056bb8a9a0b345c645d3812b83cfe\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/259-自主性与可控性.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 259 题：自主性与可控性\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/259-自主性与可控性.md\",\"sha\":\"2b42accc8ccf721727c7431e672528cd4e3ed20b\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/260-多模态理解与生成.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 260 题：多模态理解与生成\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/260-多模态理解与生成.md\",\"sha\":\"f0ee33fb271c0a9542035e4730df3e40dd4374e6\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/261-工具学习与泛化.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 261 题：工具学习与泛化\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/261-工具学习与泛化.md\",\"sha\":\"6657aa6ec4827454f239d45064f49dacca8af0ce\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/262-记忆与状态演进.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 262 题：记忆与状态演进\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/262-记忆与状态演进.md\",\"sha\":\"39d49d25ee97b9937ca0adbbdb090cd9ace237e4\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/263-强化学习与Agent.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 263 题：强化学习与 Agent\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/263-强化学习与Agent.md\",\"sha\":\"df84857d7a13a86ecf6ad9f4ed6d0c7ae72ba7c9\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/264-开源与开放生态.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 264 题：开源与开放生态\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/264-开源与开放生态.md\",\"sha\":\"1e92076be240df4e599a12289f464d7fac2996a8\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/265-垂直领域大模型.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 265 题：垂直领域大模型\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/265-垂直领域大模型.md\",\"sha\":\"5da1fc4d58eea65795f1e00318011c5044663208\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/266-推理加速与芯片.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 266 题：推理加速与芯片\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/266-推理加速与芯片.md\",\"sha\":\"e1f0f98f96fc60bd3e6358dafc268205dec87268\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/267-安全与对齐前沿.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 267 题：安全与对齐前沿\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/267-安全与对齐前沿.md\",\"sha\":\"9e4c25463460e51d5749eb5b834b114b8b2bcdd2\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/268-人机协作界面.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 268 题：人机协作界面\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/268-人机协作界面.md\",\"sha\":\"54fddf0e08671e02c9ca4c93bc70d4645e86a944\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/269-自动化与自主系统.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 269 题：自动化与自主系统\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/269-自动化与自主系统.md\",\"sha\":\"2cd2e9507ca7b9b297a709cb55f28a7b6bc56fbd\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/270-生成式AI与创作.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 270 题：生成式 AI 与创作\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/270-生成式AI与创作.md\",\"sha\":\"2db68a408d05983de7976c6605f57bad56f131b4\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/271-知识图谱与Agent.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 271 题：知识图谱与 Agent\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/271-知识图谱与Agent.md\",\"sha\":\"40371bee30d01a82372488e71d3e9460133e04c3\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/272-多Agent前沿.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 272 题：多 Agent 前沿\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/272-多Agent前沿.md\",\"sha\":\"7e58901401431dd6ae3a7ea90961b6bb6060293b\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/273-持续学习与适应.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 273 题：持续学习与适应\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/273-持续学习与适应.md\",\"sha\":\"e9427956752c60e0d91e8d08c1933e4abb82299d\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/274-可解释AI与Agent.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 274 题：可解释 AI 与 Agent\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/274-可解释AI与Agent.md\",\"sha\":\"59d17408160ea2693ef1c870e290b988dda4bd2d\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/275-标准化与互操作.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 275 题：标准化与互操作\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/275-标准化与互操作.md\",\"sha\":\"0d953207d9431735e65cf366d0e86278eb1a2d65\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/276-监管与政策趋势.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 276 题：监管与政策趋势\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/276-监管与政策趋势.md\",\"sha\":\"3b09230ef517e30df92dbf3a6033b68ed6045f6d\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/277-商业化与落地.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 277 题：商业化与落地\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/277-商业化与落地.md\",\"sha\":\"902c2209b2f0619351c1e8549a7ee267d2786a10\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/278-前沿研究方向.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 278 题：前沿研究方向\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/278-前沿研究方向.md\",\"sha\":\"c107e29fdc01950ab6bc2703c819bb57bf59c3e4\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/279-技术路线图.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 279 题：技术路线图\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/279-技术路线图.md\",\"sha\":\"e6cbfaa2979813ecbd9ff89101b32aefc56280c2\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/280-趋势总结.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 280 题：趋势总结\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/280-趋势总结.md\",\"sha\":\"83ed294b521593497617ece45e9b963b297b11d3\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/12-最新技术趋势/README.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"最新技术趋势（第 251–280 题）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"12-最新技术趋势\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"12-最新技术趋势/README.md\",\"sha\":\"6258b8af69f5309b775dd048ea2074243dfdb1c2\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/281-金融.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 281 题：金融\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/281-金融.md\",\"sha\":\"37b074cdde956053809eb3e6a921522dcd1acf62\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/282-医疗.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 282 题：医疗\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/282-医疗.md\",\"sha\":\"afec453d7d76b79205ec5ce3b1d483a4ab72d254\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/283-法律.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 283 题：法律\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/283-法律.md\",\"sha\":\"183e5fe8785afd1e4c06a4b85617b80b1401e94a\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/284-客服.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 284 题：客服\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/284-客服.md\",\"sha\":\"6cb36bb7c658e84fc4aaa21107e7838884d0e567\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/285-教育.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 285 题：教育\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/285-教育.md\",\"sha\":\"be804283bedf40bd62e4d868426bb3d65139f115\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/286-运维.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 286 题：运维\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/286-运维.md\",\"sha\":\"3267db1ed49a064d911a01b3eda3f9c4d9e14fc1\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/287-电商.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 287 题：电商\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/287-电商.md\",\"sha\":\"07e0d28d9ed9ddb31209516160dd98b0af3c90a0\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/288-内容.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 288 题：内容\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/288-内容.md\",\"sha\":\"da24da155bf05fa9ba9a789837f66daa524f7ef0\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/289-研发.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 289 题：研发\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/289-研发.md\",\"sha\":\"f89f533b82a8bdb5132f7e9f6d69e627e6691ce0\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/290-政务.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 290 题：政务\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/290-政务.md\",\"sha\":\"066dbd159c4505d0635e543d20920eb536f90c7c\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/291-制造.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 291 题：制造\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/291-制造.md\",\"sha\":\"e3870bc862998fe5cc8b2facfffb71a892e69b1f\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/292-能源.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 292 题：能源\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/292-能源.md\",\"sha\":\"9b191f717af4a28d48a2a5154c0cd58c3c05bb1c\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/293-交通.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 293 题：交通\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/293-交通.md\",\"sha\":\"0a59f4d4ca9ad9b6ee68ca01d91e06931b781e93\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/294-农业.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 294 题：农业\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/294-农业.md\",\"sha\":\"f474715f4cefb903ef283c70444ef1ab33573cc2\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/295-媒体.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 295 题：媒体\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/295-媒体.md\",\"sha\":\"9623988e057dd1cd2938ba6e62289bfd6ec32d09\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/296-游戏.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 296 题：游戏\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/296-游戏.md\",\"sha\":\"bc2e0bc6ff5ddda01fc2bd733c0f7f8310b1fd35\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/297-人力资源.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 297 题：人力资源\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/297-人力资源.md\",\"sha\":\"1f79ccc854f3338522ce41de51217de7427de4c5\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/298-跨行业.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 298 题：跨行业\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/298-跨行业.md\",\"sha\":\"5d5249e4870b16e161092e9abbd904a27c8ede27\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/299-落地挑战.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 299 题：落地挑战\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/299-落地挑战.md\",\"sha\":\"ac9f9fe42c8bdd93e35dd3aa71cae914cf7f8b25\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/300-总结与展望.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"第 300 题：总结与展望\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/300-总结与展望.md\",\"sha\":\"8c91741ed09ffe40fb19a7d0347eff6b85bbba4c\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/13-行业应用/README.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"行业应用（第 281–300 题）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"13-行业应用\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"13-行业应用/README.md\",\"sha\":\"c384e8cc45a144866a5ba2b8a6fc1a1a076eb5e1\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/300题漫游指南.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"300 题漫游指南：一个 Agent 从「大脑」到「上岗」的一天\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"300题漫游指南.md\",\"sha\":\"484e50be04c44e53bd75a12f1bf502b728a308ca\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/GITHUB_推送说明.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"推送到 GitHub 说明\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"GITHUB_推送说明.md\",\"sha\":\"ccc030b4971d173da60760c07573ca00bf67afc0\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/README.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"Agent 算法工程师面经（300 题版）\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"README.md\",\"sha\":\"cf0df2bc2267c5c07236ffc29c099a1042ea3951\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/assets/README.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"知识卡片图片\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"assets\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"assets/README.md\",\"sha\":\"59208055f7fb4984b019827e16de3777c9fa5b51\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/assets/知识卡片风格与规格.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"知识卡片风格与规格\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"assets\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"assets/知识卡片风格与规格.md\",\"sha\":\"b46d66fc4b934beadd27b6696079e6e63b806741\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    },
+    {
+      "path": "imports/RiddleGo/agent-interview-300/真题/RAG.md",
+      "mode": "reference",
+      "record": "<!-- zhiye:{\"title\":\"RAG\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"真题\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"真题/RAG.md\",\"sha\":\"bedc5216e03eb294bce651d95faf7d623af3270d\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+    }
+  ]
+}
