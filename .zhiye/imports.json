@@ -148,8 +148,9 @@
     },
     {
       "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/27-记忆机制.md",
-      "mode": "reference",
-      "record": "<!-- zhiye:{\"title\":\"第 27 题：Agent 中的记忆机制——短期记忆 vs 长期记忆\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/27-记忆机制.md\",\"sha\":\"0a13bbf82e3132f37d3c63270c2306793a603bd7\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n"
+      "mode": "copy",
+      "record": "<!-- zhiye:{\"title\":\"第 27 题：Agent 中的记忆机制——短期记忆 vs 长期记忆\",\"tags\":[\"AI\",\"面试\",\"导入资料\"],\"visibility\":\"public\",\"folderPath\":[\"外部资料\",\"Agent 面试 300 题\",\"02-Agent核心概念\"],\"pinned\":false,\"source\":{\"url\":\"https://github.com/RiddleGo/agent-interview-300\",\"branch\":\"main\",\"path\":\"02-Agent核心概念/27-记忆机制.md\",\"sha\":\"0a13bbf82e3132f37d3c63270c2306793a603bd7\",\"commit\":\"e29d19298e86f4a779064883e23b1a72bf6687fb\"},\"referenceOnly\":true} -->\n",
+      "fileSha": "2a235aa05feaebb97c8dd13a1537d7e7c454f62c"
     },
     {
       "path": "imports/RiddleGo/agent-interview-300/02-Agent核心概念/28-规划.md",
